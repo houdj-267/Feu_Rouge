@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    let currentLight = -1; // Aucune lumière allumée au départ
+    let currentLight = -1; 
 
     const lumières = [
         document.getElementById('feu-rouge'),
@@ -12,16 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function eteindreLumières() {
         lumières.forEach(lumière => {
             lumière.style.opacity = 0.2;
-            lumière.classList.add('etat-eteint'); // Applique la classe pour les feux éteints
+            lumière.classList.add('etat-eteint');
         });
     }
 
-    // Fonction pour allumer une lumière spécifique
     function allumerLumière(index) {
-        // Éteindre toutes les lumières avant d'allumer celle sélectionnée
         eteindreLumières();
         lumières[index].style.opacity = 1;
-        lumières[index].classList.remove('etat-eteint'); // Retirer la classe des feux allumés
+        lumières[index].classList.remove('etat-eteint'); 
     }
 
     
