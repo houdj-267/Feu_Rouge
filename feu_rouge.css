@@ -1,0 +1,55 @@
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* margin: 0; */
+    background-color: #efe6e6;
+    color: rgb(12, 12, 12);
+}
+
+.feu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lumiere {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 50%;
+    opacity: 0.4;
+    /* transition: opacity 0.5s, background-color 0.5s; */
+}
+
+.rouge {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.vert {
+    background-color: green;
+}
+
+.etat-eteint {
+    background-color: #333; 
+}
+#btn-rouge{
+    background-color: red;
+    
+}
+#btn-orange{
+    background-color: orange;
+}
+#btn-vert{
+    background-color: green;
+}
